@@ -1,0 +1,169 @@
+<div class="button-container">
+  <button
+    class="button"
+    [style.backgroundColor]="activeButton === 'products' ? 'red' : 'white'"
+    [style.color]="activeButton === 'products' ? 'white' : 'red'"
+    (click)="showContent('products')"
+  >
+    Products
+  </button>
+  <button
+    class="button"
+    [style.backgroundColor]="activeButton === 'orders' ? 'red' : 'white'"
+    [style.color]="activeButton === 'orders' ? 'white' : 'red'"
+    (click)="showContent('orders')"
+  >
+    Orders
+  </button>
+  <button
+    class="button"
+    [style.backgroundColor]="activeButton === 'category' ? 'red' : 'white'"
+    [style.color]="activeButton === 'category' ? 'white' : 'red'"
+    (click)="showContent('category')"
+  >
+    Category
+  </button>
+</div>
+
+<div class="content">
+  @if (activeContent === 'products') {
+    <div class="card">
+      <div class="left-side">
+        <img src="../../../assets/review.jpeg" alt="" />
+        <div class="card-details">
+          <h4>Product Name</h4>
+          <p>
+            Review Product description Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quas error dolorem eligendi nam.
+          </p>
+          <div class="rating">
+            @if("let ratings of iconArray"){
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="17px"
+              viewBox="0 -960 960 960"
+              width="17px"
+              fill="#ffa500"
+            >
+              <path
+                d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+              />
+            </svg>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button
+          mat-icon-button
+          class="edit-button"
+          matTooltip="Edit the content"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button
+          mat-icon-button
+          matTooltip="Delete this item"
+          class="delete-button"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+
+  } @else if (activeContent === 'orders') {
+    <div class="card">
+      <div class="left-side">
+        <img src="../../../assets/review.jpeg" alt="" />
+        <div class="card-details">
+          <h4>Product Name</h4>
+          <p>
+            Review Product description Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quas error dolorem eligendi nam.
+          </p>
+          <div class="rating">
+            @if("let ratings of iconArray"){
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="17px"
+              viewBox="0 -960 960 960"
+              width="17px"
+              fill="#ffa500"
+            >
+              <path
+                d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+              />
+            </svg>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button
+          mat-icon-button
+          class="edit-button"
+          matTooltip="Edit the content"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button
+          mat-icon-button
+          matTooltip="Delete this item"
+          class="delete-button"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  } @else if (activeContent === 'category') {
+    <div class="card">
+      <div class="left-side">
+        <img src="../../../assets/review.jpeg" alt="" />
+        <div class="card-details">
+          <h4>Product Name</h4>
+          <p>
+            Review Product description Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Quas error dolorem eligendi nam.
+          </p>
+          <div class="rating">
+            @if("let ratings of iconArray"){
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="17px"
+              viewBox="0 -960 960 960"
+              width="17px"
+              fill="#ffa500"
+            >
+              <path
+                d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"
+              />
+            </svg>
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="button-group">
+        <button
+          mat-icon-button
+          class="edit-button"
+          matTooltip="Edit the content"
+        >
+          <mat-icon>edit</mat-icon>
+        </button>
+
+        <button
+          mat-icon-button
+          matTooltip="Delete this item"
+          class="delete-button"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  }
+</div>

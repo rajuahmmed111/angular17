@@ -1,0 +1,180 @@
+.product-card-design-container {
+  background-color: #d7d6d6;
+  height: 100vh;
+  padding-top: 50px;
+}
+
+.product-card-design-card-container {
+  position: relative;
+  width: 290px;
+  height: 450px;
+  overflow: hidden;
+  margin: 50px 0 0 50px;
+}
+
+.product-card-design-card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.card-img {
+  width: 100%;
+  height: 37%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.info {
+  padding: 10px;
+}
+
+.date-time {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 7px 10px 0 10px;
+}
+
+.date-time-down {
+  display: flex;
+  align-items: center;
+}
+
+.date-time-down svg {
+  margin-right: 5px;
+}
+
+.date-time-down span {
+  color: #8f8787;
+}
+
+button {
+  width: 91%;
+  margin: 0 auto;
+  display: block;
+  background-color: #f5f6f8;
+  color: #8f8787;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  text-align: start;
+  margin-top: 17px;
+
+  svg {
+    margin-top: 6px;
+  }
+}
+
+button a {
+  color: blue;
+}
+
+.info p {
+  font-size: 14px;
+  color: #8f8787;
+  padding: 8px 0 0 13px;
+}
+
+.info h3 {
+  padding-left: 13px;
+}
+
+.play-section {
+  display: flex;
+  align-items: center;
+  margin-left: 13px;
+}
+
+.play-icon {
+  background-color: #d8fcea;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.play-section p {
+  color: green;
+  font-weight: bold;
+}
+
+.product-card-design-card:first-child {
+  background-color: white;
+  z-index: 2;
+}
+
+.product-card-design-card:last-child {
+  background-color: white;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.product-card-design-card-container:hover .product-card-design-card:first-child {
+  transform: translateY(-100%);
+}
+
+.logo-div {
+  display: flex;
+  align-items: center;
+  margin-left: 13px;
+}
+
+.logo-div img {
+  width: 45px;
+  height: 50px;
+}
+
+.logo-div div {
+  line-height: 0px;
+}
+
+.guest {
+  font-size: 15px;
+  color: #000;
+  font-weight: 400;
+}
+
+.lily {
+  font-size: 20px;
+  color: #1c9f56 !important;
+  font-weight: 600;
+}
+
+.on-hover-title {
+  color: #221f1f;
+  font-weight: 500;
+}
+
+.lorem {
+  font-size: 12px;
+  padding: 0 0 0 13px;
+}
+
+.product {
+  background-color: #1c9f56 !important;
+  width: 50% !important;
+  color: white !important;
+  padding: 10px 0 10px 18px !important;
+  display: flex;
+  margin-left: 14px !important;
+}
+
+h5 {
+  margin-top: 60px;
+  padding-left: 100px;
+}
+
+.footer-icon {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 25px;
+  margin-left: 19px;
+}

@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  font-weight: 800;
+}
+
+.invoice-container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 10px;
+
+  .header-down {
+    display: flex;
+    gap: 30px;
+
+    .logo img {
+      width: 85px;
+      border-radius: 10px;
+    }
+
+    .company-info {
+      text-align: left;
+      line-height: 14px;
+
+      p {
+        margin-top: 0px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.order-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+
+  thead {
+    background-color: hwb(0 87% 13%);
+  }
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.total-summary {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  .left {
+    line-height: 15px;
+  }
+
+  .right {
+    margin-top: 15px;
+  }
+
+  .summary-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    td {
+      border: 1px solid #cdcaca;
+      padding: 8px;
+      width: 50%;
+    }
+  }
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+
+  p {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    text-align: center;
+    width: 200px;
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+  color: #4d4b4b;
+}
+
+// Responsive Design
+// @media screen and (max-width: 768px) {
+//   .invoice-container {
+//     width: 90%;
+//     margin: 10px auto;
+//     padding: 18px;
+//   }
+
+//   .header {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+
+//   .order-details {
+//     flex-direction: column;
+//     text-align: center;
+//   }
+
+//   .order-details .left,
+//   .order-details .right {
+//     margin-bottom: 10px;
+//   }
+
+//   .total-summary {
+//     flex-direction: column;
+//   }
+
+//   .total-summary .left,
+//   .total-summary .right {
+//     margin-bottom: 10px;
+//   }
+
+//   .summary-table {
+//     width: 100%;
+//   }
+// }
+
+// @media screen and (max-width: 560px) {
+//   .product-table {
+//     display: none;
+//   }
+
+//   .product-table th,
+//   .product-table td {
+//     padding: 5px;
+//   }
+// }

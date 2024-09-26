@@ -1,0 +1,438 @@
+// .contact-button {
+//   position: relative;
+//   background-color: #ffc107;
+//   color: #333;
+//   border: none;
+//   padding: 16px 30px;
+//   border-radius: 30px;
+//   font-size: 16px;
+//   font-weight: bold;
+//   overflow: hidden;
+//   transition: color 0.3s, background-color 0.5s;
+//   z-index: 1;
+//   border: 2px solid #ffc107;
+// }
+
+// .contact-button::before,
+// .contact-button::after {
+//   content: "";
+//   position: absolute;
+//   width: 100%;
+//   height: 50%;
+//   left: 0;
+//   background-color: white;
+//   transition: transform 0.4s ease, background-color 0.3s;
+//   z-index: -1;
+// }
+
+// .contact-button::before {
+//   top: 0;
+//   transform: translateX(-100%);
+// }
+
+// .contact-button::after {
+//   bottom: 0;
+//   transform: translateX(100%);
+// }
+
+// .contact-button:hover::before {
+//   transform: translateX(0);
+// }
+
+// .contact-button:hover::after {
+//   transform: translateX(0);
+// }
+
+// .contact-button:hover {
+//   background-color: white;
+//   color: #333;
+// }
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   margin: 0;
+//   background-color: #181818;
+//   font-family: Arial, sans-serif;
+// }
+
+// .container {
+//   position: relative;
+// }
+
+// .profile-card {
+//   text-align: center;
+//   background-color: #171719;
+//   border: 1px solid #343333;
+//   color: #ffffff;
+//   width: 250px;
+//   height: 250px;
+//   position: relative;
+// }
+
+// .profile-image img {
+//   width: 252px;
+//   height: 252px;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   position: absolute;
+//   margin: -120px 0 0 -126px;
+// }
+
+// .card-title {
+//   margin-top: 145px;
+
+//   h2 {
+//     margin: 10px 0 5px 0;
+//     font-size: 24px;
+//     font-weight: 800;
+//   }
+
+//   p {
+//     margin: 0;
+//     font-size: 18px;
+//     font-weight: 500;
+//     margin-top: 15px;
+//   }
+// }
+
+// .share-icon {
+//   cursor: pointer;
+//   text-align: center;
+
+//   svg {
+//     padding: 13px;
+//     border-radius: 100%;
+//     background-color: #175cff;
+//     position: absolute;
+//     margin: -20px 0 0 -25px;
+//   }
+// }
+
+// .extra-icons {
+//   display: none;
+//   position: absolute;
+//   top: 40px;
+//   left: -60px;
+//   flex-direction: column;
+//   gap: 10px;
+//   background-color: #333;
+//   padding: 10px;
+//   border-radius: 10px;
+// }
+
+// .share-icon:hover .extra-icons {
+//   display: flex;
+// }
+
+// body {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100vh;
+//   margin: 0;
+//   background-color: #181818;
+//   font-family: Arial, sans-serif;
+// }
+
+// .container {
+//   position: relative;
+// }
+
+// .profile-card-top {
+//   width: 251px;
+//   height: 310px;
+// }
+
+// .profile-card-top:hover .extra-icons {
+//   display: flex;
+// }
+
+// .profile-card {
+//   text-align: center;
+//   background-color: #171719;
+//   border: 1px solid #343333;
+//   color: #ffffff;
+//   width: 250px;
+//   height: 250px;
+//   position: relative;
+// }
+
+// .share-icon {
+//   .share-svg {
+//     padding: 13px;
+//     border-radius: 100%;
+//     background-color: #175cff;
+//     position: absolute;
+//     margin: 12px 0 0 -25px;
+//   }
+// }
+
+// .profile-card:hover {
+//   background-color: #175cff;
+// }
+// .profile-card:hover .share-svg {
+//   background-color: white;
+//   fill: #175cff;
+//   stroke-width: 60;
+//   stroke: #175cff;
+// }
+
+// .profile-card:hover .extra-icons {
+//   display: none;
+// }
+
+// .profile-image img {
+//   width: 252px;
+//   height: 252px;
+//   border-radius: 50%;
+//   object-fit: cover;
+//   position: absolute;
+//   margin: -120px 0 0 -126px;
+// }
+
+// .card-title {
+//   margin-top: 145px;
+// }
+
+// .card-title h2 {
+//   margin: 10px 0 5px 0;
+//   font-size: 24px;
+//   font-weight: 800;
+// }
+
+// .card-title p {
+//   margin: 0;
+//   font-size: 18px;
+//   font-weight: 500;
+//   margin-top: 15px;
+// }
+
+// .circle-top {
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .circle {
+//   display: none;
+//   height: 60px;
+//   width: 60px;
+//   background-color: #ffc226;
+//   border-radius: 100%;
+//   margin: 40px -40px 0 -40px;
+//   z-index: -1;
+// }
+
+// .profile-card-top:hover {
+//   .circle {
+//     display: block;
+//     z-index: 1;
+//   }
+//   .golla2 {
+//     transform: translate(-25px, -40px);
+//   }
+//   .golla1 {
+//     transform: translate(25px, -40px);
+//   }
+// }
+
+// .share-icon {
+//   cursor: pointer;
+//   text-align: center;
+//   position: relative;
+// }
+
+// .extra-icons {
+//   display: none;
+//   flex-direction: column;
+//   top: 60px;
+//   position: absolute;
+
+//   .extra-icons-down {
+//     display: flex;
+//     gap: 15px;
+//     margin-left: 30px;
+
+//     .svg-wraper {
+//       display: flex;
+//       gap: 6px;
+//     }
+//     svg {
+//       padding: 10px;
+//       border-radius: 100%;
+//       background-color: white;
+//     }
+
+//     svg:hover {
+//       background-color: #175cff;
+//       fill: white;
+//       stroke-width: 60;
+//       stroke: white;
+//     }
+//   }
+// }
+
+// .share-icon:hover .extra-icons {
+//   display: flex;
+// }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #181818;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.profile-card-top {
+  width: 251px;
+  height: 310px;
+}
+
+.profile-card-top:hover .extra-icons {
+  display: flex;
+}
+
+.profile-card {
+  text-align: center;
+  background-color: #171719;
+  border: 1px solid #343333;
+  color: #ffffff;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.share-icon {
+  position: relative;
+}
+
+.share-svg {
+  padding: 13px;
+  border-radius: 100%;
+  background-color: #175cff;
+  position: absolute;
+  margin: 12px 0 0 -25px;
+  transition: background-color 0.3s ease, fill 0.3s ease, stroke-width 0.3s ease,
+    stroke 0.3s ease;
+}
+
+.profile-card:hover {
+  background-color: #175cff;
+}
+
+.profile-card:hover .share-svg {
+  background-color: white;
+  fill: #175cff;
+  stroke-width: 60;
+  stroke: #175cff;
+}
+
+.profile-card:hover .extra-icons {
+  display: none;
+}
+
+.profile-image img {
+  width: 252px;
+  height: 252px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  margin: -120px 0 0 -126px;
+}
+
+.card-title {
+  margin-top: 145px;
+}
+
+.card-title h2 {
+  margin: 10px 0 5px 0;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.card-title p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+.circle-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle {
+  display: none;
+  height: 60px;
+  width: 60px;
+  background-color: #ffc226;
+  border-radius: 100%;
+  margin: 40px -40px 0 -40px;
+  z-index: -1;
+}
+
+.profile-card-top:hover {
+  .circle {
+    display: block;
+    z-index: 1;
+  }
+  .golla2 {
+    transform: translate(-25px, -40px);
+  }
+  .golla1 {
+    transform: translate(25px, -40px);
+  }
+}
+
+.share-icon {
+  cursor: pointer;
+  text-align: center;
+}
+
+.extra-icons {
+  display: none;
+  flex-direction: column;
+  top: 60px;
+  position: absolute;
+}
+
+.extra-icons-down {
+  display: flex;
+  gap: 15px;
+  margin-left: 30px;
+
+  .svg-wraper {
+    display: flex;
+    gap: 6px;
+  }
+
+  svg {
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
+    transition: background-color 0.3s ease, fill 0.3s ease,
+      stroke-width 0.3s ease, stroke 0.3s ease;
+  }
+
+  svg:hover {
+    background-color: #175cff;
+    fill: white;
+    stroke-width: 60;
+    stroke: white;
+  }
+}
+
+.share-icon:hover .extra-icons {
+  display: flex;
+}

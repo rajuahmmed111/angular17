@@ -1,0 +1,67 @@
+<div class="container" >
+  <form class="form" (ngSubmit)="onSubmit()" #userForm="ngForm">
+    <div class="example-container">
+      <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input
+          matInput
+          placeholder="MD RAJU AHMMED"
+          [formControl]="name"
+          (blur)="updateErrorMessageName()"
+          [(ngModel)]="name"
+          name="name"
+          required
+        />
+        @if (name.invalid) {
+        <mat-error>{{ errorMessage() }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="example-container">
+      <mat-form-field>
+        <mat-label>Email Address</mat-label>
+        <input
+          matInput
+          placeholder="pat@example.com"
+          [formControl]="email"
+          (blur)="updateErrorMessage()"
+          [(ngModel)]="email"
+          name="email"
+          required
+        />
+        @if (email.invalid) {
+        <mat-error>{{ errorMessage() }}</mat-error>
+        }
+      </mat-form-field>
+    </div>
+
+    <div class="date-gender">
+      <mat-form-field>
+        <mat-label>Choose a date</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker">
+          <mat-icon matDatepickerToggleIcon>keyboard_arrow_down</mat-icon>
+        </mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Gender</mat-label>
+        <mat-select>
+          <mat-option value="one">Female</mat-option>
+          <mat-option value="two">Male</mat-option>
+          <mat-option value="two">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <section class="example-section">
+      <mat-checkbox class="example-margin" [(ngModel)]="checked"
+        >Checked</mat-checkbox
+      >
+    </section>
+    <button type="submit" mat-raised-button color="primary">Submit</button>
+  </form>
+</div>
